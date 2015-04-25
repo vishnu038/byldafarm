@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    tools:context=".MainFragment">
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/farm_budget"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        ></ProgressBar>
+        <EditText
+            android:id="@+id/farm_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:hint="Farm Area"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:id="@+id/farm_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/farm_area"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@+id/farm_area"
+            android:layout_alignStart="@+id/farm_area"
+            android:layout_alignRight="@+id/farm_area"
+            android:layout_alignEnd="@+id/farm_area" />
+
+        <EditText
+            android:id="@+id/farm_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Budget(in Rs.)"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/farm_location" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bbuton_primary_rounded"
+            android:text="Submit"
+            android:layout_below="@+id/farm_budget"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bbuton_primary_rounded"
+        android:layout_margin="20dp"
+        android:text="Build a Farm"
+        android:id="@+id/build_a_farm"
+        />
+
+</RelativeLayout>
